@@ -1,30 +1,293 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Xiang Lisa Li ;)</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Lisa!</h1>
-				<p> I am a rising senior at Johns Hopkins University, majoring in CS and AMS  <em></em>. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="xli150@jhu.edu">email</a></li>
-        		<li><a href="https://xiangli1999.github.io">https://xiangli1999.github.io</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+    <head>
+        <title>Xiang Lisa Li </title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+	    <meta property="og:title" content="Xiang Li" />
+	    <meta property="og:image" content="http://nelsonliu.me/img/nelson-liu-2018.jpg" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="author" content="Nelson Liu">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    	<style>
+		pre {
+    		text-align: left;
+    		white-space: pre-line;
+  		}
+		</style>
+        <div class="container mt-5">
+            <div class="row mb-3">
+                <div class="col">
+                    <h1>Xiang Lisa Li </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 order-md-2">
+                    <img src="img/lisa.jpg" alt="Nelson Liu" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <p>
+                        Hi! I am a rising senior at Johns Hopkins University, 
+                        majoring in Computer Science and Applied Mathmatics and Statistics. 
+
+                    </p>
+                    <p>
+                        I work on natural language processing, affiliated with the Center for Language and Speech Processing. I am advised by Prof. <a href="http://www.cs.jhu.edu/~jason/" target="_blank">Jason Eisner</a>. I work on structured prediction and syntax. 
+                    </p>
+                    <p>
+                        Last summer, I did research at Harvard NLP group, working with Prof. <a href="http://rush-nlp.com" target="_blank">Sasha Rush</a>. My project is about using discrete a latent variable model to aid interpretability and controllability of autoregressive neural network for data-to-text task. 
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Email: xli150 [<a href="https://en.wikipedia.org/wiki/At_sign" target="_blank">at</a>] jhu.edu
+                    </p>
+                    <p>
+                        Links:
+                        [<a href="pdf/XiangLi082819.pdf" target="_blank">Full CV</a>] [<a href="https://twitter.com/XiangLisaLi2" target="_blank">Twitter</a>] [<a href="https://github.com/XiangLi1999" target="_blank">Github</a>]
+                    </p>
+                </div>
+            </div>
+
+<!--             <div class="row">
+                <div class="col">
+                    <h2>Recent News</h2>
+                    <ul>
+                    	<li>
+                            (9/2019) Happy Senior Year !!!
+                        </li>
+                        <li>
+                            (8/2019) Paper on Specializing Word Embeddings (for Parsing) 
+                            by Information Bottleneck, accepted to EMNLP 2019.
+                        </li>
+                        <li>
+                            (6/2019) I'm starting a summer intern at Harvardnlp, working on 
+                            controllability and interpretability of autoregressive neural 
+                            network.
+                        </li>
+                        <li>
+                            (2/2019) Paper on Generative Model of Punctuation
+                            for Dependency Parsing, accepted to TACL 2019.
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+            
+            <hr>
+            <div class="row" id="publications">
+                <div class="col">
+                    <h2>Publications</h2>
+                    <ul>
+                        <li>
+                            <a href="pdf/VIB.pdf" target="_blank">
+                                <b>Specializing Word Embeddings (for Parsing) by Information Bottleneck</b>
+                            </a>
+                            <br/>
+                            <b>Xiang Lisa Li</b>
+                            and <a href="http://www.cs.jhu.edu/~jason/" target="_blank">Jason Eisner</a>
+                            <br/>
+                            In <a href="https://www.emnlp-ijcnlp2019.org" target="_blank">
+                                <b>
+                                    Conference on Empirical Methods in Natural Language Processing
+                                    (EMNLP-IJCNLP)</b></a>, 2019.
+                            	<br/>
+
+
+                            [<a href="#" onclick="$('#emnlp2019_bib').toggle();return false;">bib</a>]
+                            [<a href="#" onclick="$('#emnlp2019_abstract').toggle();return false;">abstract</a>]
+                            [<a href="pdf/VIB-supp.pdf" target="_blank">appendix</a>]
+                            <!-- [<a href="" target="_blank">dataset</a>] -->
+                            <div id="emnlp2019_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    Pre-trained word embeddings like ELMo and BERT contain rich syntactic 
+  									and semantic information, resulting in state-of-the-art performance on 
+  									various tasks.  We propose a very fast variational information bottleneck
+  									(VIB) method to nonlinearly compress these embeddings, keeping only the
+  									information that helps a discriminative parser. We compress each word
+  									embedding to either a discrete tag or a continuous vector. 
+  									In the discrete version, our automatically compressed tags form an 
+  									alternative tag set: we show experimentally that our tags capture most 
+  									of the information in traditional POS tag annotations, but our tag 
+  									sequences can be parsed more accurately at the same level of tag granularity.
+   									In the continuous version, we show experimentally that moderately compressing 
+   									the word embeddings by our method yields a more accurate parser in 8 of 9 
+   									languages, unlike simple dimensionality reduction.
+                                </p>
+                            </div>
+                            <div id="emnlp2019_bib" class="bib" style="display:none;">
+                            	<pre>
+								@inproceedings{li-eisner-2019,
+								  author =      {Xiang Lisa Li and Jason Eisner},
+								  title =       {Specializing Word Embeddings (for Parsing) by
+								                 Information Bottleneck},
+								  booktitle =   {Proceedings of the 2019 Conference on Empirical
+								                 Methods in Natural Language Processing and 9th
+								                 International Joint Conference on Natural Language
+								                 Processing},
+								  year =        {2019},
+								  month =       nov,
+								  address =     {Hong Kong},
+								  url =         {<a href="http://cs.jhu.edu/~jason/papers/#li-eisner-2019">http://cs.jhu.edu/~jason/papers/#li-eisner-2019</a>}
+								}
+								</pre>
+                            </div>
+                        </li>
+                        <br/>
+                        <li>
+                            <a href="pdf/punctuation.pdf" target="_blank">
+                                <b>A Generative Model for Punctuation in Dependency Trees</b>
+                            </a>
+                            <br/>
+                            <b>Xiang Lisa Li </b> and
+                            <a href="http://www.cs.jhu.edu/~wdd/" target="_blank">Dingquan Wang</a> and
+                            <a href="http://www.cs.jhu.edu/~jason/" target="_blank">Jason Eisner</a>.
+                            <br/>
+                            In <a href="https://www.transacl.org/ojs/index.php/tacl" target="_blank">
+                                <b> Transactions of the Association for Computational
+                 					Linguistics (TACL)</b></a>, 2019.
+                            <br/>
+                            [<a href="#" onclick="$('#tacl2019_bib').toggle();return false;">bib</a>]
+                            [<a href="#" onclick="$('#tacl2019_abstract').toggle();return false;">abstract</a>]
+                            [<a href="https://arxiv.org/abs/1906.11298" target="_blank">arxiv</a>]
+
+                            <div id="tacl2019_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    Treebanks traditionally treat punctuation marks as ordinary words, but linguists have suggested that a tree’s “true” punctuation marks are not observed (Nunberg, 1990). These latent “underlying” marks serve to delimit or separate constituents in the syntax tree. When the tree’s yield is rendered as a written sentence, a string rewriting mechanism transduces the underlying marks into “surface” marks, which are part of the observed (surface) string but should not be regarded as part of the tree. We formalize this idea in a generative model of punctuation that admits efficient dynamic programming. We train it without observing the underlying marks, by locally maximizing the incomplete data likelihood (similarly to EM). When we use the trained model to reconstruct the tree’s underlying punctuation, the results appear plausible across 5 languages, and in particular, are consistent with Nunberg’s analysis of English. We show that our generative model can be used to beat baselines on punctuation restoration. Also, our reconstruction of a sentence’s underlying punctuation lets us appropriately render the surface punctuation (via our trained underlying-to-surface mechanism) when we syntactically transform the sentence.
+                                </p>
+                            </div>
+
+                            <div id="tacl2019_bib" class="bib" style="display:none;">
+                            	<pre>
+								@inproceedings{li-eisner-2019,
+								  author =      {Xiang Lisa Li and Jason Eisner},
+								  title =       {Specializing Word Embeddings (for Parsing) by
+								                 Information Bottleneck},
+								  booktitle =   {Proceedings of the 2019 Conference on Empirical
+								                 Methods in Natural Language Processing and 9th
+								                 International Joint Conference on Natural Language
+								                 Processing},
+								  year =        {2019},
+								  month =       nov,
+								  address =     {Hong Kong},
+								  url =         {<a href="http://cs.jhu.edu/~jason/papers/#li-eisner-2019">http://cs.jhu.edu/~jason/papers/#li-eisner-2019</a>}
+								}
+								</pre>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            			<hr>
+            <div class="row">
+                <div class="col">
+                    <h2>Honors & Awards</h2>
+                    <ul>
+                    	<li>
+                    		(Aug. 2019)
+                    		<a href="https://www.cs.jhu.edu/masson-fellowship/" target="_blank">Gerald M. Masson Fellowship</a>
+                            <br/>
+                        </li>
+                    	<li>
+                            (May. 2019) 
+                            <a href="https://www.cs.jhu.edu/2019/05/14/2019-convocation-and-department-awardees/#.XWYJ7pMzZ0I" target="_blank">
+                            Michael J.Muuss Research Award </a>
+                            <br/>	
+                        </li>
+                        <li>
+                        	(April. 2019) 
+                        	<a href="https://twitter.com/DCDataFest/status/1115054593740812295" target="_blank">
+                           	Best Insight AND Best Visualization AND Best Use of Outside Data Award</a>
+
+                       	</li>
+                        <li>
+                        	(Nov. 2018) 
+                        	<a href="https://research.jhu.edu/hour/internal/pura/" target="_blank">
+                           	Provost’s Undergraduate Research Award (PURA)</a>
+                        </li>
+                        <li>
+                        	(May. 2018) 
+                           	Research Experience for Undergraduate (REU) Fellowship
+                        </li>
+                        <li>
+                        	(May. 2018) Fellowship William Huggins Summer Fellowship 
+                        </li>
+                        <li>
+                        	(May. 2017) Summer Training and Research (STAR) Fellowship
+                   		</li>
+                   		<li>
+                        	(Nov. 2018 - Present) Member of Tau Beta Pi
+                   		</li>
+                   		 <li>
+                        	(April 2019 - Present) Member of Upsilon Pi Epsilon	
+                   		</li>
+                   		<li>
+                        	(Sep. 2016 - Present) Dean's List
+                   		</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+             <div class="row">
+                <div class="col">
+                    <h2>Teaching Experience</h2>
+                    <ul>
+                    	<li>
+                            (Fall 2019) TA @ Introduction to Statistics (AMS 553.430/630)
+                        </li>
+                    	<li>
+                            (Spring 2019) TA @ Introduction to Probability (AMS 553.420/620)
+                        </li>
+                        <li>
+                        	(Fall 2018) CA @ Natural Language Processing (CS 520.465/665)
+                       	</li>
+                        <li>
+                        	(Fall 2018) TA @ Introduction to Probability (AMS 553.420/620)
+                        </li>
+                        <li>
+                        	(Spring 2017) TA @ Introduction to Probability (AMS 553.420/620)
+                        </li>
+                        <li>
+                        	(Fall 2017) TA @ Introduction to Probability (AMS 553.420/620)
+                        </li>
+
+                        <small>
+                        	Interestingly, a perpetual prob TA is switching to stats...  Hope we can have fun in 430 :)
+                        </small>
+                  
+                    </ul>
+                </div>
+            </div>
+
+            <footer class="pt-2 my-md-2 pt-md-2 border-top">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md text-left align-self-center">
+                        <p class="h5 text-muted">
+                            Lisa, 2019
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+	    <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-51640218-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
 </html>
