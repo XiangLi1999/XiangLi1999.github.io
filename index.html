@@ -36,15 +36,14 @@
                 </div>
                 <div class="col-md-8 order-md-1">
                     <p>
-                        Hi! I am a rising senior at Johns Hopkins University, 
-                        majoring in Computer Science and Applied Mathmatics and Statistics. 
+                        Hi! I am an incoming Ph.D. at Stanford University, affiliated with the Stanford NLP group. 
 
                     </p>
                     <p>
-                        I work on natural language processing, affiliated with the Center for Language and Speech Processing. I am advised by Prof. <a href="http://www.cs.jhu.edu/~jason/" target="_blank">Jason Eisner</a>. I work on structured prediction and syntax. 
+                        I did my undergrad at Johns Hopkins University, majoring in Computer Science and Applied Mathmatics and Statistics. I work on natural language processing, affiliated with the Center for Language and Speech Processing. I am advised by Prof. <a href="http://www.cs.jhu.edu/~jason/" target="_blank">Jason Eisner</a>. I work on structured prediction and syntax. 
                     </p>
                     <p>
-                        Last summer, I did research at Harvard NLP group, working with Prof. <a href="http://rush-nlp.com" target="_blank">Sasha Rush</a>. My project is about using discrete a latent variable model to aid interpretability and controllability of autoregressive neural network for data-to-text task. 
+                        Last summer, I did research at Harvard NLP group, working with Prof. <a href="http://rush-nlp.com" target="_blank">Sasha Rush</a>. My project is about using discrete a latent variable model to aid interpretability and controllability of autoregressive neural network for generation task. 
                     </p>
                 </div>
             </div>
@@ -89,6 +88,49 @@
                 <div class="col">
                     <h2>Publications</h2>
                     <ul>
+                        <li>
+                            <a href="pdf/control_gen.pdf" target="_blank">
+                                <b>Posterior Control of Blackbox Generation</b>
+                            </a>
+                            <br/>
+                            <b>Xiang Lisa Li</b>
+                            and <a href="http://rush-nlp.com" target="_blank">Alexander Rush</a>
+
+                            <br/>
+                            In <a href="https://acl2020.org" target="_blank">
+                                <b>
+                                    Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL) </b></a>, 2020.
+                            <br/>
+
+                
+
+                            [<a href="#" onclick="$('#acl2020_bib').toggle();return false;">bib</a>]
+                            [<a href="#" onclick="$('#acl2020_abstract').toggle();return false;">abstract</a>]
+                            [<a href="pdf/control_gen_app.pdf" target="_blank">appendix</a>]
+                            <!-- [<a href="" target="_blank">dataset</a>] -->
+                            <div id="acl2020_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    Text generation often requires high-precision output that obeys task-specific rules. This fine-grained control is difficult to enforce with off-the-shelf deep learning models. In this work, we consider augmenting neural generation models with discrete control states learned through a structured latent-variable approach. Under this formulation, task-specific knowledge can be encoded through a range of rich, posterior constraints that are effectively trained into the model. This approach allows users to ground internal model decisions based on prior knowledge, without sacrificing the representational power of neural generative models. Experiments consider applications of this approach for text generation. We find that this method improves over standard benchmarks, while also providing fine-grained control.
+                                </p>
+                            </div>
+                            <div id="acl2020_bib" class="bib" style="display:none;">
+                                <pre>
+                                @inproceedings{li-rush-2020,
+                                  author =      {Xiang Lisa Li and Alexander M. Rush},
+                                  title =       {Posterior Control of Blackbox Generation},
+                                  booktitle =   {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+                                  year =        {2020},
+                                  month =       jul,
+                                  address =     {Online},
+                                  url =         {<a href="https://xiangli1999.github.io/pdf/control_gen.pdf">https://xiangli1999.github.io/pdf/control_gen.pdf</a>}
+                                }
+                                </pre>
+                            </div>
+                        </li>
+                        <br/>
+
+
+
                         <li>
                             <a href="pdf/VIB.pdf" target="_blank">
                                 <b>Specializing Word Embeddings (for Parsing) by Information Bottleneck</b>
@@ -255,6 +297,12 @@
                 <div class="col">
                     <h2>Honors & Awards</h2>
                     <ul>
+                        <li>
+                            (May. 2020)
+                            Outstanding Senior Award 
+                            <br/>
+                        </li>
+
                         <li>
                             (Dec. 2019)
                             <a href="https://cra.org/about/awards/outstanding-undergraduate-researcher-award/" target="_blank"> Outstanding Undergraduate Researcher Award  </a> (Computing Research Association) 
