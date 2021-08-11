@@ -36,25 +36,25 @@
                 </div>
                 <div class="col-md-8 order-md-1">
                     <p>
-                        Hi! I am an incoming Ph.D. at Stanford University, affiliated with the Stanford NLP group. 
+                        Hi! I am a first year Ph.D. at Stanford University, coadvised by <a href="https://cs.stanford.edu/~pliang" target="_blank">Percy Liang</a> and <a href="https://thashim.github.io/" target="_blank">Tatsunori Hashimoto</a>. I am affiliated with the Stanford NLP group. 
 
                     </p>
                     <p>
                         I did my undergrad at Johns Hopkins University, majoring in Computer Science and Applied Mathmatics and Statistics. I work on natural language processing, affiliated with the Center for Language and Speech Processing. I am advised by Prof. <a href="http://www.cs.jhu.edu/~jason/" target="_blank">Jason Eisner</a>. I work on structured prediction and syntax. 
                     </p>
                     <p>
-                        Last summer, I did research at Harvard NLP group, working with Prof. <a href="http://rush-nlp.com" target="_blank">Sasha Rush</a>. My project is about using discrete a latent variable model to aid interpretability and controllability of autoregressive neural network for generation task. 
+                        Previously, I did research at Harvard NLP group, working with Prof. <a href="http://rush-nlp.com" target="_blank">Sasha Rush</a>. My project is about using discrete a latent variable model to aid interpretability and controllability of autoregressive neural network for generation task. 
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <p>
-                        Email: xli150 [<a href="https://en.wikipedia.org/wiki/At_sign" target="_blank">at</a>] jhu.edu
+                        Email: xlisali [<a href="https://en.wikipedia.org/wiki/At_sign" target="_blank">at</a>] stanford.edu
                     </p>
                     <p>
                         Links:
-                        [<a href="pdf/resume-XiangLi.pdf" target="_blank">Full CV</a>] [<a href="https://twitter.com/XiangLisaLi2" target="_blank">Twitter</a>] [<a href="https://github.com/XiangLi1999" target="_blank">Github</a>]
+                        [<a href="" target="_blank">Full CV</a>] [<a href="https://twitter.com/XiangLisaLi2" target="_blank">Twitter</a>] [<a href="https://github.com/XiangLi1999" target="_blank">Github</a>]
                     </p>
                 </div>
             </div>
@@ -89,6 +89,51 @@
                     <h2>Publications</h2>
                     <ul>
                         <li>
+
+                            <a href="pdf/prefix_tuning.pdf" target="_blank">
+                                <b>Prefix-Tuning: Optimizing Continuous Prompts for Generation</b>
+                            </a>
+                            <br/>
+                            <b>Xiang Lisa Li</b>
+                            and <a href="https://cs.stanford.edu/~pliang" target="_blank">Percy Liang</a>
+
+                            <br/>
+                            In <a href="" target="_blank">
+                                <b>
+                                    Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) </b></a>
+                            <br/>
+
+                
+
+                            [<a href="#" onclick="$('#acl2021_bib').toggle();return false;">bib</a>]
+                            [<a href="#" onclick="$('#acl2021_abstract').toggle();return false;">abstract</a>]
+                            <!-- [<a href="" target="_blank">dataset</a>] -->
+                            <div id="acl2021_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    Fine-tuning is the de facto way of leveraging large pretrained language models for downstream tasks. However, fine-tuning modifies all the language model parameters and therefore necessitates storing a full copy for each task. In this paper, we propose prefix-tuning, a lightweight alternative to fine-tuning for natural language generation tasks, which keeps language model parameters frozen and instead optimizes a sequence of continuous task-specific vectors, which we call the prefix. Prefix-tuning draws inspiration from prompting for language models, allowing subsequent tokens to attend to this prefix as if it were ``virtual tokens''. We apply prefix-tuning to GPT-2 for table-to-text generation and to BART for summarization. We show that by learning only 0.1% of the parameters, prefix-tuning obtains comparable performance in the full data setting, outperforms fine-tuning in low-data settings, and extrapolates better to examples with topics that are unseen during training.
+                                </p>
+                            </div>
+                            <div id="acl2021_bib" class="bib" style="display:none;">
+                                <pre>
+                                @inproceedings{li-liang-2021-prefix,
+                                    title = "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+                                    author = "Li, Xiang Lisa  and
+                                      Liang, Percy",
+                                    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+                                    month = aug,
+                                    year = "2021",
+                                    address = "Online",
+                                    publisher = "Association for Computational Linguistics",
+                                    url = "https://aclanthology.org/2021.acl-long.353",
+                                    doi = "10.18653/v1/2021.acl-long.353",
+                                    pages = "4582--4597",
+                                }
+                                </pre>
+                            </div>
+                        </li>
+                        <br/>
+
+
                             <a href="pdf/control_gen.pdf" target="_blank">
                                 <b>Posterior Control of Blackbox Generation</b>
                             </a>
@@ -297,6 +342,12 @@
                 <div class="col">
                     <h2>Honors & Awards</h2>
                     <ul>
+                        <li>
+                            (Sep. 2020)
+                            Stanford Graduate Fellowship
+                            <br/>
+                        </li>
+
                         <li>
                             (May. 2020)
                             Outstanding Senior Award 
