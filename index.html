@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-md-8 order-md-1">
                     <p>
-                        Hi! I am a first year Ph.D. at Stanford University, coadvised by <a href="https://cs.stanford.edu/~pliang" target="_blank">Percy Liang</a> and <a href="https://thashim.github.io/" target="_blank">Tatsunori Hashimoto</a>. I am affiliated with the Stanford NLP group. 
+                        Hi! I am a second year Ph.D. at Stanford University, coadvised by <a href="https://cs.stanford.edu/~pliang" target="_blank">Percy Liang</a> and <a href="https://thashim.github.io/" target="_blank">Tatsunori Hashimoto</a>. I am affiliated with the Stanford NLP group. 
 
                     </p>
                     <p>
@@ -90,6 +90,42 @@
                     <ul>
                         <li>
 
+                            <a href="pdf/diffusion-lm.pdf" target="_blank">
+                                <b>Diffusion-LM Improves Controllable Text Generation</b>
+                            </a>
+                            <br/>
+                            <b>Xiang Lisa Li</b>, John Thickstun, Ishaan Gulrajani, Percy Liang, Tatsunori B. Hashimoto
+                            <br/>
+                            In <a href="" target="_blank">
+                                <b>
+                                    preprint </b></a>
+                            <br/>
+
+                            [<a href="#" onclick="$('#diffusion_lm_bib').toggle();return false;">bib</a>]
+                            [<a href="#" onclick="$('#diffusion_lm_abstract').toggle();return false;">abstract</a>]
+                            [<a href="https://arxiv.org/pdf/2205.14217.pdf" target="_blank">arxiv</a>]
+                            <!-- [<a href="" target="_blank">dataset</a>] -->
+                            <div id="diffusion_lm_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    Controlling the behavior of language models (LMs) without re-training is a major open problem in natural language generation. While recent works have demonstrated successes on controlling simple sentence attributes (e.g., sentiment), there has been little progress on complex, fine-grained controls (e.g., syntactic structure). To address this challenge, we develop a new non-autoregressive language model based on continuous diffusions that we call Diffusion-LM. Building upon the recent successes of diffusion models in continuous domains, Diffusion-LM iteratively denoises a sequence of Gaussian vectors into word vectors, yielding a sequence of intermediate latent variables. The continuous, hierarchical nature of these intermediate variables enables a simple gradient-based algorithm to perform complex, controllable generation tasks. We demonstrate successful control of Diffusion-LM for six challenging fine-grained control tasks, significantly outperforming prior work.
+                                </p>
+                            </div>
+                            <div id="diffusion_lm_bib" class="bib" style="display:none;">
+                                <pre>
+                                @article{Li-2022-DiffusionLM,
+                                title={Diffusion-LM Improves Controllable Text Generation},
+                                author={Xiang Lisa Li and John Thickstun and Ishaan Gulrajani and Percy Liang and Tatsunori Hashimoto},
+                                journal={ArXiv},
+                                year={2022},
+                                volume={abs/2205.14217}
+                            }
+                                </pre>
+                            </div>
+                        </li>
+                        <br/>
+
+                        <li>
+
                             <a href="pdf/prefix_tuning.pdf" target="_blank">
                                 <b>Prefix-Tuning: Optimizing Continuous Prompts for Generation</b>
                             </a>
@@ -133,7 +169,7 @@
                         </li>
                         <br/>
 
-
+                        <li>
                             <a href="pdf/control_gen.pdf" target="_blank">
                                 <b>Posterior Control of Blackbox Generation</b>
                             </a>
