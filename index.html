@@ -32,15 +32,23 @@
             </div>
             <div class="row">
                 <div class="col-md-4 order-md-2">
-                    <img src="img/lisa.jpg" alt="Lisa" class="img-fluid rounded">
+                    <img src="img/lisa.jpeg" alt="Lisa" class="img-fluid rounded">
                 </div>
                 <div class="col-md-8 order-md-1">
                     <p>
-                        Hi! I am a 4th year Ph.D. student at Stanford University, coadvised by <a href="https://cs.stanford.edu/~pliang" target="_blank">Percy Liang</a> and <a href="https://thashim.github.io/" target="_blank">Tatsunori Hashimoto</a>.
+                        Hi! I am a final year Ph.D. student at Stanford University, coadvised by <a href="https://cs.stanford.edu/~pliang" target="_blank">Percy Liang</a> and <a href="https://thashim.github.io/" target="_blank">Tatsunori Hashimoto</a>. 
+                        I am affiliated with the Stanford NLP Group, and my research is supported by Stanford Graduate Fellowship and Two Sigma PhD Fellowship. 
+                    </p>
+                    <p>  
+                        
+                        I work on developing methods to overcome structural limitations of language models. My research encompasses many stages of language model development, including architecture (Diffusion-LM), adaptation (Prefix-Tuning), self-supervision (GV-consistency), decoding (Contrastive Decoding) and evaluation (AutoBencher).   
 
                     </p>
                     <p>
-                        I did my undergrad at Johns Hopkins University, majoring in Computer Science and Applied Mathmatics and Statistics. I am fortunate to be advised by Prof. <a href="http://www.cs.jhu.edu/~jason/" target="_blank">Jason Eisner</a>. 
+                        Previously, I received undergraduate degrees from Johns Hopkins University, majoring in Computer Science and Applied Mathmatics and Statistics. I am fortunate to be advised by Prof. <a href="http://www.cs.jhu.edu/~jason/" target="_blank">Jason Eisner</a>. 
+                    </p>
+                    <p>
+                        If you're interested in getting started in NLP research and think it'd be useful to chat, please feel free to email me.
                     </p>
                     <p>
                         Email: xlisali [<a href="https://en.wikipedia.org/wiki/At_sign" target="_blank">at</a>] stanford.edu
@@ -97,7 +105,8 @@
                     <p>(for full publication list please checkout my [<a href="https://scholar.google.com/citations?user=nzA4P0oAAAAJ&hl=en" target="_blank">Google Scholar</a>])
 
                     <ul>
-                        <li>
+
+<li>
 
                             <a href="pdf/diffusion-lm.pdf" target="_blank">
                                 <b>Diffusion-LM Improves Controllable Text Generation</b>
@@ -133,6 +142,9 @@
                         </li>
                         <br/>
 
+
+                        <!-- ================= -->
+
                         <li>
 
                             <a href="pdf/prefix_tuning.pdf" target="_blank">
@@ -140,7 +152,7 @@
                             </a>
                             <br/>
                             <b>Xiang Lisa Li</b>
-                            and <a href="https://cs.stanford.edu/~pliang" target="_blank">Percy Liang</a>
+                            and Percy Liang
 
                             <br/>
                             In <a href="" target="_blank">
@@ -177,6 +189,125 @@
                             </div>
                         </li>
                         <br/>
+
+
+
+                        <li>
+    <a href="https://arxiv.org/pdf/2310.01846" target="_blank">
+        <b>Benchmarking and Improving Generator-Validator Consistency of Language Models</b>
+    </a>
+    <br/>
+    <b>Xiang Lisa Li</b>, Vaishnavi Shrivastava, Siyan Li, 
+    Tatsunori Hashimoto, and Percy Liang
+    <br/>
+    In <a href="" target="_blank">
+        <b>ICLR 2023</b></a>
+    <br/>
+
+    [<a href="#" onclick="$('#iclr2023_bib').toggle();return false;">bib</a>]
+    [<a href="#" onclick="$('#iclr2023_abstract').toggle();return false;">abstract</a>]
+
+    <div id="iclr2023_abstract" class="abstract" style="display:none;">
+        <p>
+            As of September 2023, ChatGPT correctly answers "what is 7+8" with 15, but when asked "7+8=15, True or False" it responds with "False". This inconsistency between generating and validating an answer is prevalent in language models (LMs) and erodes trust. In this paper, we propose a framework for measuring the consistency between generation and validation (which we call generator-validator consistency, or GV-consistency), finding that even GPT-4, a state-of-the-art LM, is GV-consistent only 76% of the time. To improve the consistency of LMs, we propose to finetune on the filtered generator and validator responses that are GV-consistent, and call this approach consistency fine-tuning. We find that this approach improves GV-consistency of Alpaca-30B from 60% to 93%, and the improvement extrapolates to unseen tasks and domains (e.g., GV-consistency for positive style transfers extrapolates to unseen styles like humor). In addition to improving consistency, consistency fine-tuning improves both generator quality and validator accuracy without using any labeled data. Evaluated across 6 tasks, including math questions, knowledge-intensive QA, and instruction following, our method improves the generator quality by 16% and the validator accuracy by 6.3% across all tasks.
+        </p>
+    </div>
+    
+    <div id="iclr2023_bib" class="bib" style="display:none;">
+        <pre>
+        @inproceedings{li2023gvconsistency,
+            title = "Benchmarking and Improving Generator-Validator Consistency of Language Models",
+            author = "Li, Xiang Lisa and Shrivastava, Vaishnavi and Li, Siyan and 
+                      Hashimoto, Tatsunori and Liang, Percy",
+            booktitle = "Proceedings of the International Conference on Learning Representations",
+            month = apr,
+            year = "2023",
+            address = "Online",
+            publisher = "International Conference on Learning Representations",
+            url = "https://arxiv.org/pdf/2310.01846",
+        }
+        </pre>
+    </div>
+</li>
+<br/>
+
+                        <!-- ================= -->
+
+
+<li>
+    <a href="https://arxiv.org/pdf/2210.15097" target="_blank">
+        <b>Contrastive Decoding: Open-ended Text Generation as Optimization</b>
+    </a>
+    <br/>
+    <b>Xiang Lisa Li</b>, Ari Holtzman, Daniel Fried, Percy Liang, Jason Eisner, Tatsunori Hashimoto, Luke Zettlemoyer, and Mike Lewis
+    <br/>
+    In <a href="" target="_blank">
+        <b>ACL 2023</b></a>
+    <br/>
+
+    [<a href="#" onclick="$('#acl2023_bib').toggle();return false;">bib</a>]
+    [<a href="#" onclick="$('#acl2023_abstract').toggle();return false;">abstract</a>]
+
+    <div id="acl2023_abstract" class="abstract" style="display:none;">
+        <p>
+            Given a language model (LM), maximum probability is a poor decoding objective for open-ended generation, because it produces short and repetitive text. On the other hand, sampling can often produce incoherent text that drifts from the original topics. We propose contrastive decoding (CD), a reliable decoding approach that optimizes a contrastive objective subject to a plausibility constraint. The contrastive objective returns the difference between the likelihood under a large LM (called the expert, e.g., OPT-13B) and a small LM (called the amateur, e.g., OPT-125M), and the constraint ensures that the outputs are plausible. CD is inspired by the fact that the failures of larger LMs (e.g., repetition, incoherence) are even more prevalent in smaller LMs, and that this difference signals which texts should be preferred. CD requires zero additional training, and produces higher quality text than decoding from the larger LM alone. It also works across model scales (OPT-13B and GPT2-1.5B) and significantly outperforms four strong decoding algorithms (e.g., nucleus, top-k) in automatic and human evaluations across wikipedia, news, and story domains.
+        </p>
+    </div>
+    
+    <div id="acl2023_bib" class="bib" style="display:none;">
+        <pre>
+        @inproceedings{li2023contrastivedecoding,
+            title = "Contrastive Decoding: Open-ended Text Generation as Optimization",
+            author = "Li, Xiang Lisa and Holtzman, Ari and Fried, Daniel and 
+                      Liang, Percy and Eisner, Jason and Hashimoto, Tatsunori and 
+                      Zettlemoyer, Luke and Lewis, Mike",
+            booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+            month = jul,
+            year = "2023",
+            address = "Toronto, Canada",
+            publisher = "Association for Computational Linguistics",
+            url = "https://arxiv.org/pdf/2210.15097",
+        }
+        </pre>
+    </div>
+</li>
+<br/>
+
+
+<li>
+    <a href="https://arxiv.org/abs/2407.08351" target="_blank">
+        <b>AutoBencher: Towards Declarative Benchmark Construction</b>
+    </a>
+    <br/>
+    <b>Xiang Lisa Li</b>, Farzaan Kaiyom, Evan Zheran Liu, Yifan Mai, Percy Liang, and Tatsunori Hashimoto
+    <br/>
+    <i>ArXiv 2024</i>
+    <br/>
+
+    [<a href="#" onclick="$('#autobencher_bib').toggle();return false;">bib</a>]
+    [<a href="#" onclick="$('#autobencher_abstract').toggle();return false;">abstract</a>]
+
+    <div id="autobencher_abstract" class="abstract" style="display:none;">
+        <p>
+            We present AutoBencher, a declarative framework for automatic benchmark construction, and use it to scalably discover novel insights and vulnerabilities of existing language models. Concretely, given a few desiderata of benchmarks (e.g., question difficulty, topic salience), we operationalize each desideratum and cast benchmark creation as an optimization problem. Specifically, we experiment with two settings with different optimization objectives: (i) for capability evaluation, we declare the goal of finding a salient, difficult dataset that induces novel performance patterns; (ii) for safety evaluation, we declare the goal of finding a dataset of unsafe prompts that existing LMs fail to decline. To tackle this type of optimization problem, we propose to use a language model to automatically construct datasets and iteratively revise the dataset to optimize for the declared desiderata. We use AutoBencher (powered by GPT-4) to create datasets for math, multilinguality, knowledge, and safety. The scalability of AutoBencher allows it to test fine-grained categories and tail knowledge, creating datasets that are on average 27% more novel and 22% more difficult than existing benchmarks. AutoBencher also helps identify specific gaps not captured by existing benchmarks: e.g., Gemini-Pro has knowledge gaps on Permian Extinction and Fordism while GPT-4 fails to decline harmful requests about cryptocurrency scams.
+        </p>
+    </div>
+    
+    <div id="autobencher_bib" class="bib" style="display:none;">
+        <pre>
+        @article{li2024autobencher,
+            title = "AutoBencher: Towards Declarative Benchmark Construction",
+            author = "Li, Xiang Lisa and Kaiyom, Farzaan and Liu, Evan Zheran and 
+                      Mai, Yifan and Liang, Percy and Hashimoto, Tatsunori",
+            journal = "arXiv preprint arXiv:2407.08351",
+            year = "2024",
+            url = "https://arxiv.org/abs/2407.08351",
+        }
+        </pre>
+    </div>
+</li>
+<br/>
+
 
                         <li>
                             <a href="pdf/control_gen.pdf" target="_blank">
@@ -400,7 +531,7 @@
                 <div class="row justify-content-center">
                     <div class="col-6 col-md text-left align-self-center">
                         <p class="h5 text-muted">
-                            Lisa, 2023
+                            Lisa, 2024
                         </p>
                     </div>
                 </div>
